@@ -1,0 +1,182 @@
+{
+  "schema_version": "mathwise-release-manifest-1.1",
+  "release_name": "Global Multirow Coercivity Certificate",
+  "release_version": "1.1",
+  "embedded_certificate_version": "1.0",
+  "repair_type": "packaging_only_reproducibility_repair",
+  "assembly_timestamp_utc": "2026-07-19T13:01:28Z",
+  "supersedes_release_sha256": "01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093",
+  "verified_decision": "A. CORRECTED POST-SEAL RELEASE ACCEPTED - SELF-CONTAINED AND REPRODUCIBLE",
+  "mathematical_status": "EXACT GLOBAL MULTIROW COERCIVITY CERTIFICATE - UNIQUE TARGET, NONUNIQUE AUXILIARY COMPLETIONS",
+  "self_reference_policy": {
+    "manifest_entry": "MANIFEST.json is not listed inside its own entries.",
+    "sha256sums_entry": "SHA256SUMS.txt is not listed in MANIFEST.json or inside itself, avoiding cyclic cryptographic references. SHA256SUMS.txt lists MANIFEST.json."
+  },
+  "entries": [
+    {
+      "filename": "Global_Multirow_Coercivity_Certificate.pdf",
+      "uncompressed_bytes": 95441,
+      "sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe",
+      "media_type": "application/pdf",
+      "semantic_role": "human-readable formal certificate",
+      "provenance_category": "publication_output",
+      "classification": "presentation_document",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe"
+    },
+    {
+      "filename": "RELEASE_NOTES.txt",
+      "uncompressed_bytes": 1414,
+      "sha256": "609334c36d22aa47f21c415be306f646e17970670c90927aad93ea268c2887eb",
+      "media_type": "text/plain",
+      "semantic_role": "v1.1 packaging-repair history and release status",
+      "provenance_category": "publication_output",
+      "classification": "publication_document",
+      "immutable_from_v1_0": false,
+      "original_v1_0_sha256": null
+    },
+    {
+      "filename": "REPRODUCE.txt",
+      "uncompressed_bytes": 3584,
+      "sha256": "98b9df6ebe418ad1a5abdeed1253aad0df2b3687fc975518de2efa2a5516892a",
+      "media_type": "text/plain",
+      "semantic_role": "corrected self-contained reproduction instructions",
+      "provenance_category": "publication_output",
+      "classification": "publication_document",
+      "immutable_from_v1_0": false,
+      "original_v1_0_sha256": null
+    },
+    {
+      "filename": "SCOPE_AND_LIMITATIONS.txt",
+      "uncompressed_bytes": 843,
+      "sha256": "713784618bea169c24af822ecee277480db47646e437ef3ba278448ccfd2e68a",
+      "media_type": "text/plain",
+      "semantic_role": "formal scope and limitations",
+      "provenance_category": "publication_output",
+      "classification": "publication_document",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "713784618bea169c24af822ecee277480db47646e437ef3ba278448ccfd2e68a"
+    },
+    {
+      "filename": "active_lower15_schur_completion_packet.zip",
+      "uncompressed_bytes": 810953,
+      "sha256": "1f7abc5024948777850335f7cb422c58f60c9efa64e9763038d4454b5ee1c16c",
+      "media_type": "application/zip",
+      "semantic_role": "exact active lower-15 completion proof packet",
+      "provenance_category": "proof_construction_artifact",
+      "classification": "proof_data",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "1f7abc5024948777850335f7cb422c58f60c9efa64e9763038d4454b5ee1c16c"
+    },
+    {
+      "filename": "clean_room_global_certificate_verification.zip",
+      "uncompressed_bytes": 40589,
+      "sha256": "f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26",
+      "media_type": "application/zip",
+      "semantic_role": "previous halted clean-room audit required by verifier provenance chain",
+      "provenance_category": "clean_room_verification_artifact",
+      "classification": "audit_result",
+      "immutable_from_v1_0": false,
+      "original_v1_0_sha256": null
+    },
+    {
+      "filename": "clean_room_global_certificate_verification_v2.zip",
+      "uncompressed_bytes": 46792,
+      "sha256": "8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a",
+      "media_type": "application/zip",
+      "semantic_role": "successful clean-room reproducibility audit",
+      "provenance_category": "clean_room_verification_artifact",
+      "classification": "audit_result",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a"
+    },
+    {
+      "filename": "exact_source_functional_source_packet.zip",
+      "uncompressed_bytes": 5092,
+      "sha256": "bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb",
+      "media_type": "application/zip",
+      "semantic_role": "authoritative exact source-functional problem data",
+      "provenance_category": "problem_definition_input",
+      "classification": "authoritative_source",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb"
+    },
+    {
+      "filename": "final_global_multirow_coercivity_proof_packet.zip",
+      "uncompressed_bytes": 235956,
+      "sha256": "cce1bde9bb54f2bcd1e7d2be61c91256ce9cbd8c529ae1000e1dd2d948df2e87",
+      "media_type": "application/zip",
+      "semantic_role": "global primal-dual and coercivity proof packet",
+      "provenance_category": "proof_construction_artifact",
+      "classification": "proof_data",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "cce1bde9bb54f2bcd1e7d2be61c91256ce9cbd8c529ae1000e1dd2d948df2e87"
+    },
+    {
+      "filename": "full_finite_state_primal_feasibility_packet.zip",
+      "uncompressed_bytes": 1029102,
+      "sha256": "86475b452e86e93047937cd267551bffac7a08c80c87f8df64623bbc2ea14974",
+      "media_type": "application/zip",
+      "semantic_role": "complete finite-state primal feasibility packet",
+      "provenance_category": "proof_construction_artifact",
+      "classification": "proof_data",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "86475b452e86e93047937cd267551bffac7a08c80c87f8df64623bbc2ea14974"
+    },
+    {
+      "filename": "pdf_validation_report.json",
+      "uncompressed_bytes": 2451,
+      "sha256": "b7e4637bb075baf11e045f0f3ed53c47094709561d943783460a5d6d324054f6",
+      "media_type": "application/json",
+      "semantic_role": "PDF render, font, navigation, and pagination validation",
+      "provenance_category": "publication_output",
+      "classification": "audit_result",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "b7e4637bb075baf11e045f0f3ed53c47094709561d943783460a5d6d324054f6"
+    },
+    {
+      "filename": "primal_anchored_rotation_root_isolation.zip",
+      "uncompressed_bytes": 100434,
+      "sha256": "40164cc6d65601053ae30dfd63fad7bc6cd662141d4e28b2ebd47774571f0fc7",
+      "media_type": "application/zip",
+      "semantic_role": "isolated rotation-root source and proof objects",
+      "provenance_category": "proof_construction_artifact",
+      "classification": "proof_data",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "40164cc6d65601053ae30dfd63fad7bc6cd662141d4e28b2ebd47774571f0fc7"
+    },
+    {
+      "filename": "primal_schur_branch_packet.zip",
+      "uncompressed_bytes": 16100,
+      "sha256": "50817a80ec3e13832e682e2215c2d511458542101d21ce8474eac0e6ba6489a1",
+      "media_type": "application/zip",
+      "semantic_role": "original numerical primal branch packet",
+      "provenance_category": "problem_definition_input",
+      "classification": "authoritative_source",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "50817a80ec3e13832e682e2215c2d511458542101d21ce8474eac0e6ba6489a1"
+    },
+    {
+      "filename": "requirements-lock-v2.txt",
+      "uncompressed_bytes": 43,
+      "sha256": "3cfa900453d75bf1802ed1bb69314903c62723f0de0b63ccb4020562e4b1ed85",
+      "media_type": "text/plain",
+      "semantic_role": "exact verifier environment lock",
+      "provenance_category": "clean_room_verification_artifact",
+      "classification": "verifier_requirement",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "3cfa900453d75bf1802ed1bb69314903c62723f0de0b63ccb4020562e4b1ed85"
+    },
+    {
+      "filename": "verify_global_certificate_v2.py",
+      "uncompressed_bytes": 39224,
+      "sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d",
+      "media_type": "text/x-python",
+      "semantic_role": "executable clean-room verifier",
+      "provenance_category": "clean_room_verification_artifact",
+      "classification": "verifier",
+      "immutable_from_v1_0": true,
+      "original_v1_0_sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d"
+    }
+  ]
+}

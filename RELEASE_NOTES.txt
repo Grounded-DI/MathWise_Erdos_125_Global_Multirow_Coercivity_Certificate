@@ -1,0 +1,30 @@
+GLOBAL MULTIROW COERCIVITY CERTIFICATE - RELEASE NOTES
+
+Release container version: 1.1
+Embedded mathematical certificate version: 1.0
+Repair classification: packaging-only reproducibility repair
+Packaging repair timestamp: 2026-07-19T13:01:28Z
+
+Verified mathematical classification
+EXACT GLOBAL MULTIROW COERCIVITY CERTIFICATE -
+UNIQUE TARGET, NONUNIQUE AUXILIARY COMPLETIONS
+
+Packaging repair history
+1. Original release v1.0 passed its top-level ZIP and internal member-hash audits.
+2. Post-seal acceptance found that verify_global_certificate_v2.py requires
+   --previous-audit.
+3. Release v1.0 omitted both that command argument and the required previous-audit
+   packet.
+4. The failed post-seal attempt exited during argument parsing; no mathematical replay
+   occurred.
+5. Release v1.1 adds the exact packet
+   clean_room_global_certificate_verification.zip with SHA-256
+   f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26
+   and corrects REPRODUCE.txt.
+6. The certificate PDF, theorem, proof packets, source packets, verifier, dependency
+   lock, objective interval, ranks, nullities, and scope are unchanged.
+7. Original release v1.0 is retained for provenance but is superseded by v1.1 for
+   reproducible distribution.
+
+No theorem, optimization, root, matrix, finite witness, interval, or scope statement
+was changed. No digital signature is claimed; integrity is represented by SHA-256.

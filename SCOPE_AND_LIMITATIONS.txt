@@ -1,0 +1,24 @@
+SCOPE AND LIMITATIONS
+
+Certified statement
+For the uniquely certified target c*, on the fixed interval [0,H2],
+
+  1/2 I <= W2(c*) <= 2 I,
+
+in the Loewner order.
+
+Fixed data
+- H2 = 1260233493541651302622586638887192915605138797326
+- target shifts: (1,0), (3,0), (0,1), (-1,1), (-3,1)
+- transition: 3^96/4^76 -> 3^101/4^80
+- source operator: W1 = I - (127/768) D_{s1,3}
+
+Uniqueness
+The optimal target c* is unique and the optimal target face has dimension zero.
+The auxiliary Schur completions are not unique. Certified local dimensions are
+91, 105, and 225, for total local auxiliary-completion dimension 421.
+
+Limitations
+No assertion is made for other intervals, target shifts, coefficient vectors,
+source operators, transition architectures, or residual problems.
+The release contains no digital signature and claims only SHA-256 integrity.

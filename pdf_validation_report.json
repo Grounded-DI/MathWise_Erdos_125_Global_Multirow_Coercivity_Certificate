@@ -1,0 +1,85 @@
+{
+  "schema_version": "mathwise-pdf-validation-1",
+  "validated_at_utc": "2026-07-19T06:50:06Z",
+  "pdf_filename": "Global_Multirow_Coercivity_Certificate.pdf",
+  "pdf_sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe",
+  "page_count": 10,
+  "page_size": "A4",
+  "render": {
+    "renderer": "render_pdf.py / pdftoppm",
+    "dpi": 160,
+    "rendered_pages": 10,
+    "every_page_rendered": true,
+    "page_by_page_visual_inspection": {
+      "performed": true,
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "no_clipped_equations": true,
+      "no_overflowing_tables": true,
+      "no_missing_glyphs": true,
+      "no_unintended_blank_pages": true,
+      "no_overlaps": true
+    }
+  },
+  "fonts": {
+    "pdffonts_output": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nMDTJFV+DejaVuSans                    TrueType          WinAnsi          yes yes yes     39  0\nQRBEED+DejaVuSans-Bold               TrueType          WinAnsi          yes yes yes     41  0\nEAEXIZ+DejaVuSansMono                TrueType          WinAnsi          yes yes yes     43  0\n",
+    "all_listed_fonts_embedded": true,
+    "used_font_families": [
+      "DejaVuSans",
+      "DejaVuSans-Bold",
+      "DejaVuSansMono"
+    ],
+    "hashes_use_monospace_text": true
+  },
+  "navigation": {
+    "bookmark_count": 21,
+    "bookmarks_valid": true,
+    "table_of_contents_present": true,
+    "unresolved_cross_references": []
+  },
+  "text": {
+    "searchable_text_present": true,
+    "text_characters_by_page": [
+      1263,
+      987,
+      2101,
+      2412,
+      2576,
+      3043,
+      2867,
+      556,
+      3893,
+      1842
+    ],
+    "key_text_checks": {
+      "theorem_statement_text": true,
+      "clean_room_decision": true,
+      "unique_target_text": true,
+      "scope_limitation": true
+    }
+  },
+  "pagination": {
+    "page_numbers_consistent": true,
+    "blank_pages": []
+  },
+  "pdfa": {
+    "attempted": false,
+    "claimed": false,
+    "reason": "PDF/A compliance was not requested as a mandatory output and no PDF/A validator was invoked."
+  },
+  "ghostscript_null_render": {
+    "passed": true,
+    "command": "gs -dBATCH -dNOPAUSE -dSAFER -sDEVICE=nullpage"
+  },
+  "overall_status": "PASS"
+}

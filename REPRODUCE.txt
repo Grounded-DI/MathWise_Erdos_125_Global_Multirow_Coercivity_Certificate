@@ -1,0 +1,77 @@
+GLOBAL MULTIROW COERCIVITY CERTIFICATE - REPRODUCTION INSTRUCTIONS
+
+Release container version: 1.1
+Embedded mathematical certificate version: 1.0
+Packaging repair timestamp: 2026-07-19T13:01:28Z
+
+Required environment
+- Python 3.13.5
+- SymPy 1.14.0
+- mpmath 1.3.0
+- No network access is required.
+- No environment variable, hidden file, prior output directory, or external mathematical input is required.
+
+Required source files and SHA-256
+- primal_schur_branch_packet.zip: 50817a80ec3e13832e682e2215c2d511458542101d21ce8474eac0e6ba6489a1
+- primal_anchored_rotation_root_isolation.zip: 40164cc6d65601053ae30dfd63fad7bc6cd662141d4e28b2ebd47774571f0fc7
+- active_lower15_schur_completion_packet.zip: 1f7abc5024948777850335f7cb422c58f60c9efa64e9763038d4454b5ee1c16c
+- full_finite_state_primal_feasibility_packet.zip: 86475b452e86e93047937cd267551bffac7a08c80c87f8df64623bbc2ea14974
+- exact_source_functional_source_packet.zip: bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb
+- final_global_multirow_coercivity_proof_packet.zip: cce1bde9bb54f2bcd1e7d2be61c91256ce9cbd8c529ae1000e1dd2d948df2e87
+- clean_room_global_certificate_verification.zip: f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26
+- clean_room_global_certificate_verification_v2.zip: 8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a
+- verify_global_certificate_v2.py: 6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d
+
+Run from the directory containing the release members:
+
+python verify_global_certificate_v2.py \
+  --source-primal primal_schur_branch_packet.zip \
+  --source-root primal_anchored_rotation_root_isolation.zip \
+  --source-active active_lower15_schur_completion_packet.zip \
+  --source-full-primal full_finite_state_primal_feasibility_packet.zip \
+  --source-functional exact_source_functional_source_packet.zip \
+  --candidate-final final_global_multirow_coercivity_proof_packet.zip \
+  --previous-audit clean_room_global_certificate_verification.zip \
+  --output independent_release_replay
+
+Expected successful decision
+A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR
+
+Why --previous-audit is required
+The verifier records and checks the provenance chain. The packet
+clean_room_global_certificate_verification.zip contains the original Decision G halt,
+which occurred because exact S and G0 were absent from the first four source packets.
+That halt was non-mathematical and occurred before downstream theorem replay.
+
+Source-functional repair
+exact_source_functional_source_packet.zip supplies the authoritative exact values
+S, G0, and E1,...,E5. The candidate-final proof packet remains comparison-only evidence.
+
+Variable alias
+The center TSV uses "lambda" at index 36. The polynomial system and canonical order use
+"lam" at the same index. The alias lambda -> lam is lexical only; no permutation or
+numerical transformation occurs.
+
+Expected verifier outputs
+- canonical_schema_v2.json
+- source_functional_replay.json
+- root_variable_order_audit.json
+- verification_log_v2.txt
+- verification_summary_v2.json
+- regenerated_bounds_v2.json
+- regenerated_state_table_v2.tsv
+- regenerated_finite_slacks_v2.tsv
+- stationarity_reductions/
+- uniqueness_rank_certificate/
+- support_geometry_audit_v2.json
+- MANIFEST.json
+- SHA256SUMS.txt
+- clean_room_global_certificate_verification_v2.zip
+- clean_room_global_certificate_verification_v2.zip.sha256
+
+Hash checking
+On systems with sha256sum:
+  sha256sum -c SHA256SUMS.txt
+
+The corrected release ZIP's detached hash is stored in
+Global_Multirow_Coercivity_Release_v1_1.zip.sha256.
