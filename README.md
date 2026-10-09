@@ -33,3 +33,8 @@ The current repository checkout does not include four source ZIPs required by `R
 Read `SCOPE_AND_LIMITATIONS.txt` and `RELEASE_NOTES.txt` first, then `REPRODUCE.txt`, `MANIFEST.json`, the certificate PDF, and the verifier source. Run the verifier only after supplying every required source packet and the locked dependencies.
 
 Publisher: Grounded DI LLC
+
+
+## Curated collection
+
+This fixed-instance certificate is indexed in [MathWise Deterministic Replay Certificates](https://github.com/Grounded-DI/MathWise-Deterministic-Replay-Certificates/tree/main/erdos-125-global-multirow-coercivity). This repository remains the canonical source.
